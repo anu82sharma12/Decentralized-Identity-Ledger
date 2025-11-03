@@ -9,16 +9,16 @@ Three-Node Network: Local PoA (Proof-of-Authority) chain for demo; nodes validat
 
 Tech Stack:
 
-Solidity 0.8.19: IdentityLedger contract.
-Web3.js 4.x: Interact via Node.js script.
-Ganache CLI: Three-node local chain (ports 8545, 8546, 8547).
-Dependencies: web3, crypto-js (for hashing).
+# Solidity 0.8.19: IdentityLedger contract.
+# Web3.js 4.x: Interact via Node.js script.
+# Ganache CLI: Three-node local chain (ports 8545, 8546, 8547).
+# Dependencies: web3, crypto-js (for hashing).
 
 Goals:
 
-Demonstrate immutability: Once timestamped, hashes can't be altered.
-Decentralization: Transactions propagate across nodes.
-Scalability: Events for efficient querying.
+# Demonstrate immutability: Once timestamped, hashes can't be altered.
+# Decentralization: Transactions propagate across nodes.
+# Scalability: Events for efficient querying.
 
 Core Components
 Smart Contract: IdentityLedger.sol
@@ -49,9 +49,9 @@ Compile: Use Remix or solc (not included; copy ABI to script).
 
 Run Three-Node Chain:
 
-Terminal 1: ganache-cli -p 8545 -a 10 -e 1000 --networkId 12345 --allowUnlimitedContractSize.
-Terminal 2: ganache-cli -p 8546 -a 10 -e 1000 --networkId 12345 --allowUnlimitedContractSize --rpc http://127.0.0.1:8545.
-Terminal 3: Same as Terminal 2 but port 8547.
+# Terminal 1: ganache-cli -p 8545 -a 10 -e 1000 --networkId 12345 --allowUnlimitedContractSize.
+# Terminal 2: ganache-cli -p 8546 -a 10 -e 1000 --networkId 12345 --allowUnlimitedContractSize --rpc http://127.0.0.1:8545.
+# Terminal 3: Same as Terminal 2 but port 8547.
 
 
 Deploy & Interact: Run node demo.js (connects to Node 1; txs propagate).
