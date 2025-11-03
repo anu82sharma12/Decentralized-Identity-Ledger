@@ -1,4 +1,4 @@
-# Decentralized Identity Ledger Demo
+# Decentralized Identity Ledger 
 
 **Three-node blockchain for real-time document integrity validation and timestamping**  
 A production-ready demo using **Solidity + Web3.js** with a **multi-node Ganache network** simulating decentralized consensus.
